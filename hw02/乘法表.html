@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+
+<title></title>
+
+<script>
+
+function btn(){
+
+var k=document.getElementById("in").value;
+
+ if (k > 0 && k < 10) {
+
+for(var i=1;i<=k;i++){
+
+for(var j=1;j<=i;j++){
+
+document.write(j+"*"+i+"="+(i*j)+' '+' ');
+
+}
+
+document.write("<br />");
+
+}
+
+}
+}
+</script>
+
+</head>
+
+<body>
+
+<input type="text" id="in"placeholder="output n*n，input n 注：0<n<10"style="width: 200px;"/>
+
+<input type="button" id="bu" value="确定" onclick="btn()"/>
+
+</body>
+
+</html>
